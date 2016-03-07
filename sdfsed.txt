@@ -1,0 +1,41 @@
+!!! LIVE_DB3_PROMOTHREEUSER !!! - VIVA - || /home/promo_three/jboss-6.1.0.Final_PLATFORM/server/default/log : join POSTPAID_02_2016__SORTED.csv   MSISDNS_TARGETED | wc -l
+232360
+
+
+!!! LIVE_DB3_PROMOTHREEUSER !!! - VIVA - || /home/promo_three/jboss-6.1.0.Final_PLATFORM/server/default/log : join PREPAID_02_2016_SORTED.csv   MSISDNS_TARGETED | wc -l
+234388
+
+
+!!! LIVE_DB3_PROMOTHREEUSER !!! - VIVA - || /home/promo_three/jboss-6.1.0.Final_PLATFORM/server/default/log : join NEW_USERS_MSISDNs_SORTED.csv POSTPAID_02_2016__SORTED.csv | wc -l
+3392
+
+
+!!! LIVE_DB3_PROMOTHREEUSER !!! - VIVA - || /home/promo_three/jboss-6.1.0.Final_PLATFORM/server/default/log : join NEW_USERS_MSISDNs_SORTED.csv PREPAID_02_2016_SORTED.csv  | wc -l 
+1183
+
+
+!!! LIVE_DB3_PROMOTHREEUSER !!! - VIVA - || /home/promo_three/jboss-6.1.0.Final_PLATFORM/server/default/log : mysql --host=192.168.100.56 --port=5306 --database=VIVA
+_DB_B_15012016 --user=viva_user -p < postpaid_new.sql 
+Enter password: 
+sum(amount)
+12438900.00
+12,438.900
+
+!!! LIVE_DB3_PROMOTHREEUSER !!! - VIVA - || /home/promo_three/jboss-6.1.0.Final_PLATFORM/server/default/log : mysql --host=192.168.100.56 --port=5306 --database=VIVA_DB_B_15012016 --user=viva_user -p < postpaid_new.sql 
+Enter password: 
+sum(amount)
+1222100.00
+
+
+!!! LIVE_DB3_PROMOTHREEUSER !!! - VIVA - || /home/promo_three/jboss-6.1.0.Final_PLATFORM/server/default/log : mysql --host=192.168.100.56 --port=5306 --database=VIVA
+_DB_B_15012016 --user=viva_user -p < prepaid_new.sql 
+Enter password: 
+sum(amount)
+4314950.00
+4,314.950
+
+!!! LIVE_DB3_PROMOTHREEUSER !!! - VIVA - || /home/promo_three/jboss-6.1.0.Final_PLATFORM/server/default/log : mysql --host=192.168.100.56 --port=5306 --database=VIVA_DB_B_15012016 --user=viva_user -p < prepaid_new.sql 
+Enter password: 
+sum(amount)
+285200.00
+
